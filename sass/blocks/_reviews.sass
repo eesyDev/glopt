@@ -1,0 +1,48 @@
+.reviews
+    position: relative
+    padding: 51px 0 65px
+    &_title
+        @include h2
+    &_line
+        @include line
+    &_subtitle
+        @include subtitle
+    &_under
+        margin: 31px auto 0
+        min-height: 251px
+        width: 601px
+        background-color: #ffffff
+    &_carousel
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        div
+            width: 601px
+            &:focus
+                outline: none
+    &_photo
+        width: 120px
+        height: 120px
+        margin: 0 auto
+    &_text
+        margin-top: 19px
+        font-size: 14px
+        font-weight: 300
+        text-align: center
+        span
+            display: block
+            font-size: 18px
+            font-weight: 700
+            color: #3a3a3a
+            line-height: 2
+    .slick-prev, .slick-next
+        position: absolute
+        top: 30px
+        right: 180px
+        border: none
+        background-color: rgba(255,255,255, .001)
+        &:focus
+            outline: none
+    .slick-prev
+        z-index: 1
+        left: 180px

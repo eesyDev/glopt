@@ -1,0 +1,100 @@
+.tabs
+    position: relative
+    padding: 53px 0 58px
+    &_title
+        @include h2
+    &_line
+        @include line
+    &_subtitle
+        @include subtitle
+    &_wrapper
+        display: flex
+        justify-content: space-between
+        margin-top: 34px
+    &_item
+        width: 261px
+        min-height: 355px
+        border: 1.0px solid #e9e9e9
+        &_high
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 261px
+            height: 61px
+            background-color: #25333c
+            font-size: 16px
+            font-weight: 700
+            text-transform: uppercase
+            color: $white_color
+        &_icon
+            display: block
+            margin: 14px auto 12px
+        &_deadline
+            font-size: 14px
+            line-height: 1
+            font-weight: 400
+            text-transform: uppercase
+            color: #2e2e2e
+            text-align: center
+        &_cost
+            margin-top: 8px
+            font-size: 28px
+            line-height: 0.8
+            color: #ec644b
+            text-align: center
+        &_text
+            margin: 20px 0 25px
+            padding: 0 11px
+            font-size: 14px
+            line-height: 20px
+            font-weight: 300
+            color: #2e2e2e
+            text-align: center
+    &_consultation
+        margin-top: 56px
+        font-size: 28px
+        line-height: 1
+        font-weight: 400
+        color: #3a3a3a
+        text-align: center
+    &_icon
+        position: absolute
+        left: 50%
+        bottom: 163px
+        transform: translateX(-50%)
+        background-color: $white_color
+        padding: 9px
+        width: 120px
+        height: 120px
+        border-radius: 100%
+    &_form
+        margin-top: 71px
+        width: 100%
+        padding: 6% 10% 0
+        height: 166px
+        border: 1px solid #898989
+        box-shadow: 3px 3px 20px $white_color
+        form
+            display: flex
+            justify-content: space-between 
+            width: 100%
+        input
+            margin: 0 3px
+            padding: 0 27px
+            border-radius: 25px
+            border: 1px solid #cacaca
+            width: 270px
+            height: 45px
+            font-size: 13px
+            font-weight: 300
+            color: #101010
+    &_underbutton
+        position: absolute
+        padding: 2px
+        left: 50%
+        bottom: 36px
+        transform: translateX(-50%)
+        width: 206px
+        height: 49px
+        background-color: $white_color
+        z-index: 2

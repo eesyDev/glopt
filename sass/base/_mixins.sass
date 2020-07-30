@@ -1,0 +1,42 @@
+@mixin hover_effect
+    &:hover
+        color: $main_color
+        text-decoration: underline
+@mixin h2
+    font-size: 26px
+    line-height: 23px
+    font-weight: 700
+    text-transform: uppercase
+    color: #2e2e2e
+    text-align: center
+@mixin line
+    width: 148px
+    height: 1px
+    background-color: $main_color
+    border: none
+    margin: 20px auto 17px
+@mixin subtitle
+    display: block
+    margin: 0 auto
+    width: 100%
+    font-size: 21px
+    line-height: 1.2
+    font-weight: 300
+    color: #2e2e2e
+    text-align: center
+@mixin phonetext
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    font-size: 14px
+    line-height: 24px
+    font-weight: 300
+    color: $white_color
+    a
+        font-size: 19px
+        line-height: 24px
+        font-weight: 700
+        color: $white_color
+        text-decoration: none
+        &:hover
+            color: $main_color        

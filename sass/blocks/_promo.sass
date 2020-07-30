@@ -1,0 +1,86 @@
+.promo
+    min-height: 680px
+    background: url('../img/background_promo.png') center center/cover no-repeat
+    padding: 23px 0 82px
+    position: relative
+    &_line
+        display: block
+        margin: 85px auto 0
+    &_logo
+        display: block
+        margin: 0
+    &_header
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &_navigation
+        list-style-type: none
+        display: flex
+        justify-content: space-between
+        padding-inline-start: 0
+        &_item
+            padding: 0 14px
+            border-right: 1px dotted $white_color
+            &:last-child
+                border: none
+            a
+                font-size: 15px
+                line-height: 16px
+                font-weight: 400
+                color: $white_color
+                text-decoration: none
+                @include hover_effect
+    .hamburger
+        display: none
+    &_right
+        width: 340px
+        display: flex
+        justify-content: space-between
+    &_phone
+        @include phonetext
+    &_subtitle
+        margin: 0
+        text-align: center
+        font-size: 24px
+        line-height: 1.2
+        font-weight: 300
+        color: #ffffff
+    &_title
+        font-family: "Roboto Condensed"
+        margin: 45px 0 0
+        font-size: 72px
+        line-height: 0.8
+        font-weight: 700
+        text-transform: uppercase
+        color: #ec644b
+        text-align: center
+        span
+            display: block
+            font-family: Roboto Condensed
+            margin-top: 25px
+            font-size: 40px
+            line-height: 1.2
+            font-weight: 400
+            text-transform: uppercase
+            color: $white_color
+    &_wrapper
+        display: flex
+        justify-content: space-between
+        margin-top: 31px
+    &_item
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        max-width: 260px
+        img
+            display: block
+            width: 60px
+            height: 60px
+            margin: 0 auto
+    &_descr
+        margin-top: 15px
+        text-align: center
+        font-size: 16px
+        line-height: 22px
+        font-weight: 300
+        color: $white_color
